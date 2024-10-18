@@ -6,6 +6,22 @@
     background-image: url(../images/1920-birthday-party-balloon-background-illustration-ai-generative.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position:relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secondaryTextColor;
+        content: '';
+        opacity: .7;
+    }
     
     &__text {
         margin-top: 64px;
